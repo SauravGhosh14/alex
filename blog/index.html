@@ -107,7 +107,10 @@
 var app = angular.module('myApp', []);
 app.controller('customersCtrl', function($scope, $http) {
     $http.get("https://alex-blog000.firebaseio.com/.json")
-    .then(function (response) {$scope.names = response.data.posts;});
+    .then(function (response) {$scope.names = response.data.posts,
+                               console.log($scope.names),
+                                console.log(response.data.posts)
+                               ;});
 });
 </script>
     
