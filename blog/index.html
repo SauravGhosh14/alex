@@ -52,26 +52,13 @@
     
 <div ng-app="myApp" ng-controller="customersCtrl"> 
 
-
-  <div ng-repeat="x in names" ng-cloak>
-    <div class="card" ng-cloak>
-      <div class="container"ng-cloak>
-        <h4 ng-cloak><b>{{x.Name of Article}}</b></h4> 
-        <p ng-cloak>{{x.Category}}</p> 
-      </div>
-    </div>
-<!--
+<table>
+  <tr ng-repeat="x in names" ng-cloak>
     <td ng-cloak>{{ x.Category }}</td>
     <td ng-cloak>{{ x.Credits }}</td>
--->
-  </div>
-    <table>
+  </tr>
+</table>
 
-    <tr>
-    <td ng-cloak>{{x.Category}}</td>
-    <td ng-cloak>{{x.Credits}}</td>
-    </tr>
-    </table> 
 </div>
     
 <center>
