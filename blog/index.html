@@ -58,7 +58,15 @@
     <td ng-cloak>{{ x.Credits }}</td>
   </tr>
 </table>
-
+    
+  <div ng-repeat="x in names">
+    <div class="card">
+      <div class="container">
+        <h4 ng-cloak><b>{{x.Name of Article}}</b></h4> 
+        <p ng-cloak>{{x.Category}}</p> 
+      </div>
+    </div>
+  </div>
 </div>
     
 <center>
