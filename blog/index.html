@@ -8,6 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="/alex/assets/img/favicons/favicon.ico">
   <link rel="stylesheet" href="/alex/assets/css/main.css" />
+<link rel="stylesheet" href="/alex/assets/css/saurav.css" />    
 </head>
 
 <body>
@@ -53,8 +54,16 @@
 
 <table>
   <tr ng-repeat="x in names" ng-cloak>
+    <div class="card" ng-cloak>
+      <div class="container"ng-cloak>
+        <h4 ng-cloak><b>{{x.Name of Article}}</b></h4> 
+        <p ng-cloak>{{x.Category}}</p> 
+      </div>
+    </div>
+<!--
     <td ng-cloak>{{ x.Category }}</td>
     <td ng-cloak>{{ x.Credits }}</td>
+-->
   </tr>
 </table>
 
