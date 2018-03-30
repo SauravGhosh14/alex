@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="/alex/assets/img/favicons/favicon.ico">
   <link rel="stylesheet" href="/alex/assets/css/main.css" />
-<link rel="stylesheet" href="/alex/assets/css/saurav.css" />    
+<link rel="stylesheet" href="/alex/assets/css/saurav.css" /> <!--    -->
 </head>
 
 <body>
@@ -49,29 +49,16 @@
 </ul>
     
     
-    
+<!--    -->    
 <div ng-app="myApp" ng-controller="customersCtrl"> 
-
-<!--
-<table>
-  <tr ng-repeat="x in names">
-    <td ng-cloak>{{ x.Category }}</td>
-    <td ng-cloak>{{ x.Credits }}</td>
-  </tr>
-</table>
--->
-    
-
     <div class="card" ng-repeat="x in names">
       <div class="container">
           <a href="{{x.Source}}" target="_blank"><h3><b>{{x.Name}}</b></h3></a> 
         <p>{{x.Category}}</p> 
       </div>
     </div>
-
-    
 </div>
-    
+<!--    -->    
 <center>
 
 <div class="wrapper">
@@ -98,7 +85,7 @@
         </li>
     </ul>
 </div>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script> <!--    -->
   <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
     
 <script>
@@ -114,7 +101,7 @@
   firebase.initializeApp(config);
 </script>
   
-<script>
+<script> <!--    -->
 var app = angular.module('myApp', []);
 app.controller('customersCtrl', function($scope, $http) {
     $http.get("https://alex-blog000.firebaseio.com/.json")
@@ -122,7 +109,7 @@ app.controller('customersCtrl', function($scope, $http) {
                                console.log($scope.names)
                                ;});
 });
-</script>
+</script> <!--    -->
     
 <script src="/alex/assets/js/jquery-2.1.1.min.js"></script>
 <script src="/alex/assets/js/functions.js" type="text/javascript"></script>
