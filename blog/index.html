@@ -51,10 +51,10 @@
     
 <!--    -->    
 <div ng-app="myApp" ng-controller="customersCtrl"> 
-    <div class="card" ng-repeat="x in names">
+    <div class="card" ng-repeat="x in names" ng-if="x.Show == 'Yes'">
       <div class="container">
           <a href="{{x.Source}}" target="_blank"><h3><b>{{x.Name}}</b></h3></a> 
-        <p>{{x.Date}}</p>  
+        <p>{{ x.Date | date }}</p>  
         <p>{{x.Category}}</p>
         <p>{{x.Comments}}</p>          
       </div>
